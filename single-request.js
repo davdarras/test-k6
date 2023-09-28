@@ -1,4 +1,5 @@
 import http from "k6/http";
+import { sleep } from "k6";
 
 export const options = {
   iterations: 2,
@@ -6,8 +7,8 @@ export const options = {
 
 export default function () {
   const response = http.get("http://queen-api:8080/api/survey-unit/11");
-  const response = http.get("http://queen-api:8080/api/survey-unit/42");
-  const response = http.get("http://queen-api:8080/api/survey-unit/12");
+  http.get("http://queen-api:8080/api/survey-unit/42");
+  http.get("http://queen-api:8080/api/survey-unit/12");
   sleep(3);
-  const response = http.get("http://queen-api:8080/api/survey-unit/11");
+  http.get("http://queen-api:8080/api/survey-unit/11");
 }
