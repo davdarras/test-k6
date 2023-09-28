@@ -1,7 +1,7 @@
 import http from "k6/http";
 
 export const options = {
-  iterations: 1,
+  iterations: 2,
 };
 
 export default function () {
