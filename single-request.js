@@ -5,5 +5,5 @@ export const options = {
 };
 
 export default function () {
-  const response = http.get("https://queen-api-perf.demo.insee.io/api/survey-unit/11");
+  const response = http.get("http://queen-api:8080/api/survey-unit/11");
 }
