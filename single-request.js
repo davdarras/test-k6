@@ -5,5 +5,5 @@ export const options = {
 };
 
 export default function () {
-  const response = http.get("https://test-api.k6.io/public/crocodiles/");
+  const response = http.get("https://queen-api-perf.demo.insee.io/api/survey-unit/11");
 }
