@@ -72,8 +72,6 @@ export default function (data) {
   group("Init questionnaire", function () {
     const { idCampaign, idQuestionnaire, apiUrl } = data;
 
-    console.log(apiUrl + " " + idQuestionnaire);
-
     const res = http.get(`${apiUrl}/campaign/${idCampaign}/questionnaire`);
     check(res, {
       "status 200 get questionnaire model": (r) => r.status === 200,
@@ -83,14 +81,15 @@ export default function (data) {
     check(res2, {
       "status 200 get campaign metadata": (r) => r.status === 200,
     });
-    /*
+
     const res3 = http.get(
       `${apiUrl}/questionnaire/${idQuestionnaire}/required-nomenclatures`
     );
+    console.log(res3.json());
     check(res3, {
       "status 200 get required-nomenclatures": (r) => r.status === 200,
     });
-
+    /*
     res3.json().forEach(function (elt) {
       const res4 = http.get(`${apiUrl}/nomenclature/${elt}`);
       check(res4, { "status 200 get nomenclature": (r) => r.status === 200 });
