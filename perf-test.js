@@ -41,6 +41,15 @@ export function setup() {
   const apiUrl = `${__ENV.PROTOCOL}://${__ENV.HOSTNAME}/api`;
   const maxIterations = 18;
 
+  console.log("...........apiUrl: " + apiUrl);
+  console.log("....nbSampleDatas: " + nbSampleDatas);
+  console.log("baseSampleDataUrl: " + baseSampleDataUrl);
+  console.log(".......idCampaign: " + idCampaign);
+  console.log("..idQuestionnaire: " + idQuestionnaire);
+  console.log("..minSurveyUnitId: " + minSurveyUnitId);
+  console.log("..maxSurveyUnitId: " + maxSurveyUnitId);
+  console.log("....maxIterations: " + maxIterations);
+
   const arrData = getSampleDatas(
     baseSampleDataUrl + "data/data-${ITER}.json",
     nbSampleDatas
