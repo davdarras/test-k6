@@ -131,6 +131,10 @@ export default function (data) {
         const res6 = http.post(`${apiUrl}/paradata`, iterationParadata, params);
         check(res6, { "post survey-unit paradata": (r) => r.status === 200 });
 
+        console.log(`${apiUrl}/survey-unit/${surveyUnitId}/state-data`);
+        console.log(surveyUnitId);
+        console.log(iterationStateData);
+        console.log("end");
         const res7 = http.put(
           `${apiUrl}/survey-unit/${surveyUnitId}/state-data`,
           iterationStateData,
