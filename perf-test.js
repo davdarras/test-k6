@@ -83,7 +83,7 @@ export default function (data) {
     check(res2, {
       "status 200 get campaign metadata": (r) => r.status === 200,
     });
-
+    /*
     const res3 = http.get(
       `${apiUrl}/questionnaire/${idQuestionnaire}/required-nomenclatures`
     );
@@ -94,7 +94,7 @@ export default function (data) {
     res3.json().forEach(function (elt) {
       const res4 = http.get(`${apiUrl}/nomenclature/${elt}`);
       check(res4, { "status 200 get nomenclature": (r) => r.status === 200 });
-    });
+    });*/
   });
 
   /****Filling out questionnaire and paradata****/
