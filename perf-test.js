@@ -109,6 +109,14 @@ export default function (data) {
 
   /****Filling out questionnaire and paradata****/
   group("Filling out questionnaire", function () {
+    console.log("...........apiUrl: " + data.apiUrl);
+    console.log("....nbSampleDatas: " + data.nbSampleDatas);
+    console.log("baseSampleDataUrl: " + data.baseSampleDataUrl);
+    console.log(".......idCampaign: " + data.idCampaign);
+    console.log("..idQuestionnaire: " + data.idQuestionnaire);
+    console.log("..minSurveyUnitId: " + data.minSurveyUnitId);
+    console.log("..maxSurveyUnitId: " + data.maxSurveyUnitId);
+    console.log("....maxIterations: " + data.maxIterations);
     const { minSurveyUnitId, maxSurveyUnitId, maxIterations } = data;
     const randomSurveyUnitId = Math.floor(
       Math.random() * (maxSurveyUnitId - minSurveyUnitId + 1) + minSurveyUnitId
