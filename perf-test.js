@@ -39,6 +39,7 @@ export function setup() {
   const minSurveyUnitId = `${__ENV.MIN_SURVEY_UNIT_ID}`;
   const maxSurveyUnitId = `${__ENV.MAX_SURVEY_UNIT_ID}`;
   const apiUrl = `${__ENV.PROTOCOL}://${__ENV.HOSTNAME}/api`;
+  const maxIterations = 18;
 
   const arrData = getSampleDatas(
     baseSampleDataUrl + "data/data-${ITER}.json",
@@ -60,6 +61,7 @@ export function setup() {
     idQuestionnaire,
     minSurveyUnitId,
     maxSurveyUnitId,
+    maxIterations,
     arrData,
     arrParadata,
     arrStateData,
