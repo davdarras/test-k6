@@ -102,10 +102,9 @@ export default function (data) {
 
   /****Filling out questionnaire and paradata****/
   group("Filling out questionnaire", function () {
-    const minId = data.minSurveyUnitId;
-    const maxId = data.maxSurveyUnitId;
+    const { minSurveyUnitId, maxSurveyUnitId, maxIterations } = data;
     const randomSurveyUnitId = Math.floor(
-      Math.random() * (maxId - minId + 1) + minId
+      Math.random() * (maxSurveyUnitId - minSurveyUnitId + 1) + minSurveyUnitId
     );
     const apiUrl = data.apiUrl;
 
@@ -114,6 +113,7 @@ export default function (data) {
       maxIterations,
       currentIteration = 0
     ) {
+      console.log(currentIteration + " " + maxIterations);
       if (currentIteration < maxIterations) {
         const iterationData = data.arrData[currentIteration];
         const iterationParadata = data.arrParadata[currentIteration];
@@ -145,6 +145,6 @@ export default function (data) {
       }
     }
 
-    fillingOutQuestions(randomSurveyUnitId, data.maxIterations);
+    fillingOutQuestions(randomSurveyUnitId, maxIterations);
   });
 }
