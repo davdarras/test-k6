@@ -72,6 +72,8 @@ export default function (data) {
   group("Init questionnaire", function () {
     const { idCampaign, idQuestionnaire, apiUrl } = data;
 
+    console.log(apiUrl + " " + idQuestionnaire);
+
     const res = http.get(`${apiUrl}/campaign/${idCampaign}/questionnaire`);
     check(res, {
       "status 200 get questionnaire model": (r) => r.status === 200,
