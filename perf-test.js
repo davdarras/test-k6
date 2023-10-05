@@ -85,7 +85,9 @@ export default function (data) {
     const res3 = http.get(
       `${apiUrl}/questionnaire/${idQuestionnaire}/required-nomenclatures`
     );
+    console.log("begin");
     console.log(res3.json());
+    console.log("end");
     check(res3, {
       "status 200 get required-nomenclatures": (r) => r.status === 200,
     });
