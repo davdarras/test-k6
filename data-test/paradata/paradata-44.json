@@ -1,0 +1,65 @@
+{
+  "idSU": "100000",
+  "events": [
+    {
+      "timestamp": 1620830795794,
+      "idQuestionnaire": "LOG2021X11WebQuestionnaire",
+      "idSurveyUnit": "100000",
+      "category": "orchestrator",
+      "type": "click",
+      "id": "next-button",
+      "page": "14.5#2",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"
+    },
+    {
+      "timestamp": 1620830797059,
+      "idQuestionnaire": "LOG2021X11WebQuestionnaire",
+      "idSurveyUnit": "100000",
+      "category": "orchestrator",
+      "type": "click",
+      "id": "assistance-button",
+      "page": "14.6#2",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"
+    },
+    {
+      "timestamp": 1620830798103,
+      "idQuestionnaire": "LOG2021X11WebQuestionnaire",
+      "idSurveyUnit": "100000",
+      "category": "orchestrator",
+      "type": "click",
+      "id": "disagree-assistance-modal-button",
+      "page": "14.6#2",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"
+    },
+    {
+      "timestamp": 1620830799396,
+      "idQuestionnaire": "LOG2021X11WebQuestionnaire",
+      "idSurveyUnit": "100000",
+      "category": "orchestrator",
+      "type": "click",
+      "id": "profile-menu-button",
+      "page": "14.6#2",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"
+    },
+    {
+      "timestamp": 1620830800721,
+      "idQuestionnaire": "LOG2021X11WebQuestionnaire",
+      "idSurveyUnit": "100000",
+      "category": "orchestrator",
+      "type": "click",
+      "id": "profile-menu-button",
+      "page": "14.6#2",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"
+    },
+    {
+      "timestamp": 1620830802789,
+      "idQuestionnaire": "LOG2021X11WebQuestionnaire",
+      "idSurveyUnit": "100000",
+      "category": "orchestrator",
+      "type": "click",
+      "id": "profile-menu-button",
+      "page": "14.6#2",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"
+    }
+  ]
+}

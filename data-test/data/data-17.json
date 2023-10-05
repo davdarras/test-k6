@@ -1,0 +1,1004 @@
+{
+	"stateData": {
+		"state": "INIT",
+		"date": 1620830699143,
+		"currentPage": "14.4#1"
+	},
+	"personalization": [],
+	"data": {
+		"CALCULATED": {
+			"prenomok": "if (cast(prenom,string) = \"\") then 0 else 1",
+			"nbprenom": "sum(cast(prenomok,number) )"
+		},
+		"COLLECTED": {
+			"THL1_1_1": {
+				"PREVIOUS": null,
+				"COLLECTED": "Laurent",
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2_1_2": {
+				"PREVIOUS": null,
+				"COLLECTED": "23",
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL1_2_1": {
+				"PREVIOUS": null,
+				"COLLECTED": "Titi",
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2_2_2": {
+				"PREVIOUS": null,
+				"COLLECTED": "15",
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL1_3_1": {
+				"PREVIOUS": null,
+				"COLLECTED": "Toto",
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2_3_2": {
+				"PREVIOUS": null,
+				"COLLECTED": "43",
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL1_4_1": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2_4_2": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL1_5_1": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2_5_2": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL1_6_1": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2_6_2": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL1_7_1": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2_7_2": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL1_8_1": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2_8_2": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL1_9_1": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2_9_2": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL1_10_1": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2_10_2": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL1_11_1": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2_11_2": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL1_12_1": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2_12_2": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL1_13_1": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2_13_2": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL1_14_1": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2_14_2": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL1_15_1": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2_15_2": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL1_16_1": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2_16_2": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL1_17_1": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2_17_2": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL1_18_1": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2_18_2": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL1_19_1": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2_19_2": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL1_20_1": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2_20_2": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"OKADRESS": {
+				"PREVIOUS": null,
+				"COLLECTED": "1",
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"RESIDM": {
+				"PREVIOUS": null,
+				"COLLECTED": "2",
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"NVOI": {
+				"PREVIOUS": null,
+				"COLLECTED": "2",
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"NVOIC": {
+				"PREVIOUS": null,
+				"COLLECTED": "ter",
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"NLIB": {
+				"PREVIOUS": null,
+				"COLLECTED": "Rue des plantes !! :D",
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"NCOMP": {
+				"PREVIOUS": null,
+				"COLLECTED": "étage 2, appt 234",
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"NCODPOS": {
+				"PREVIOUS": null,
+				"COLLECTED": "31000",
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"NCOMMU": {
+				"PREVIOUS": null,
+				"COLLECTED": "Toulouse",
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL1": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"THL2": {
+				"PREVIOUS": null,
+				"COLLECTED": null,
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"NHAB": {
+				"PREVIOUS": null,
+				"COLLECTED": "3",
+				"FORCED": null,
+				"EDITED": null,
+				"INPUTED": null
+			},
+			"prenom": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					"Laurent",
+					"Toto",
+					"Thomas"
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"NOM": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					"Caouissin",
+					"Caouissin",
+					"Caouissin"
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"SEXE": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					"1",
+					"1",
+					"2"
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"DTNAIS": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					"2021-05-27",
+					"2021-04-26",
+					"2021-04-27"
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"ETAT_SANT": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					"3",
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"MAL_CHRO": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					"1",
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"LIMITAT": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					"3",
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"VUE": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"AUDITIF": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"MARCHE": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"BRAS": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"MAIN": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"CONCENTRA": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"DECISION": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"SORTIES": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"COMPRENDRE": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"PSY": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"HPSY": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"AIDPRO": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"AIDENT": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"AMENALOG": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"AIDTECH": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"HANDICAP": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"RECONNAI": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"APPRENT": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"AIDREG_A": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"AIDREG_B": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"AIDREG_C": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"AIDREG_D": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"RELATION1": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"RELATION2": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"RELATION3": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			},
+			"RESIDANCIEN": {
+				"PREVIOUS": [
+					null
+				],
+				"COLLECTED": [
+					null,
+					null,
+					null
+				],
+				"FORCED": [
+					null
+				],
+				"EDITED": [
+					null
+				],
+				"INPUTED": [
+					null
+				]
+			}
+		},
+		"EXTERNAL": {
+			"LIBCONTACT": null,
+			"ADRESSE": null
+		}
+	}
+}
