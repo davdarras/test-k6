@@ -26,6 +26,8 @@ function safeGet(url, parse = true) {
 }
 
 function getSampleDatas(url, nbSampleDatas) {
+  console.log(url);
+  console.log(nbSampleDatas);
   return new Array(nbSampleDatas).fill(0).map(function (_, i) {
     const plop = safeGet(url.replace("${ITER}", i), false);
     console.log(plop);
