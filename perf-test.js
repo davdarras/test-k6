@@ -76,12 +76,12 @@ export default function (data) {
 
     const res = http.get(`${apiUrl}/campaign/${idCampaign}/questionnaires`);
     check(res, {
-      "status 200 get questionnaire model": (r) => r.status === 200,
+      "get questionnaire model": (r) => r.status === 200,
     });
 
     const res2 = http.get(`${apiUrl}/campaign/${idCampaign}/metadata`);
     check(res2, {
-      "status 200 get campaign metadata": (r) => r.status === 200,
+      "get campaign metadata": (r) => r.status === 200,
     });
 
     const res3 = http.get(
@@ -91,7 +91,7 @@ export default function (data) {
     console.log(res3.json());
     console.log("end");
     check(res3, {
-      "status 200 get required-nomenclatures": (r) => r.status === 200,
+      "get required-nomenclatures": (r) => r.status === 200,
     });
     /*
     res3.json().forEach(function (elt) {
@@ -126,17 +126,17 @@ export default function (data) {
           iterationData,
           params
         );
-        check(res5, { "status 200 put": (r) => r.status === 200 });
+        check(res5, { "get survey-unit data": (r) => r.status === 200 });
 
         const res6 = http.post(`${apiUrl}/paradata`, iterationParadata, params);
-        check(res6, { "status 200 post": (r) => r.status === 200 });
+        check(res6, { "post survey-unit paradata": (r) => r.status === 200 });
 
         const res7 = http.put(
           `${apiUrl}/survey-unit/${surveyUnitId}/state-data`,
           iterationStateData,
           params
         );
-        check(res7, { "status 200 post": (r) => r.status === 200 });
+        check(res7, { "put survey-unit state-data": (r) => r.status === 200 });
 
         // sleep 50 sec with a random positive/negative delay of 1s
         sleep(5 + Math.random() * 2 - 1);
