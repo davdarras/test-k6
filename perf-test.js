@@ -96,17 +96,15 @@ export default function (data) {
     const res3 = http.get(
       `${apiUrl}/questionnaire/${idQuestionnaire}/required-nomenclatures`
     );
-    console.log("begin");
-    console.log(res3.json());
-    console.log("end");
+
     check(res3, {
       "get required-nomenclatures": (r) => r.status === 200,
     });
-    /*
+
     res3.json().forEach(function (elt) {
       const res4 = http.get(`${apiUrl}/nomenclature/${elt}`);
       check(res4, { "status 200 get nomenclature": (r) => r.status === 200 });
-    });*/
+    });
   });
 
   /****Filling out questionnaire and paradata****/
