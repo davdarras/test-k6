@@ -69,6 +69,7 @@ export default function (data) {
   /****Init : get model, metadata and nomenclatures****/
   group("Init questionnaire", function () {
     const { idCampaign } = data;
+    const { apiUrl } = data;
 
     const res = http.get(`${apiUrl}/campaign/${idCampaign}/questionnaire`);
     check(res, {
