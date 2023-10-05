@@ -28,7 +28,6 @@ function safeGet(url, parse = true) {
 function getSampleDatas(url, nbSampleDatas) {
   let arrayData = new Array(nbSampleDatas);
   for (let i = 0; i < nbSampleDatas; i++) {
-    console.log(nbSampleDatas + " " + url);
     arrayData[i] = safeGet(url.replace("${ITER}", i), false);
   }
   return arrayData;
@@ -113,16 +112,6 @@ export default function (data) {
 
   /****Filling out questionnaire and paradata****/
   group("Filling out questionnaire", function () {
-    /*console.log("...........apiUrl: " + data.apiUrl);
-    console.log("........stateData: " + data.arrStateData);
-    console.log("baseSampleDataUrl: " + data.baseSampleDataUrl);
-    console.log(".......idCampaign: " + data.idCampaign);
-    console.log("..idQuestionnaire: " + data.idQuestionnaire);
-    console.log("..minSurveyUnitId: " + data.minSurveyUnitId);
-    console.log("..maxSurveyUnitId: " + data.maxSurveyUnitId);
-    console.log("....maxIterations: " + data.maxIterations);
-    
-    */
     const { minSurveyUnitId, maxSurveyUnitId, maxIterations } = data;
     const randomSurveyUnitId = Math.floor(
       Math.random() * (maxSurveyUnitId - minSurveyUnitId + 1) + minSurveyUnitId
