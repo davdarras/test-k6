@@ -3,9 +3,9 @@ import http from "k6/http";
 
 export const options = {
   stages: [
-    { duration: "15s", target: `${__ENV.VUS}` }, // simulate ramp-up of traffic from 1 to ${__ENV.VUS} users over 15 minutes.
-    { duration: "15s", target: `${__ENV.VUS}` }, // stay at ${__ENV.VUS} users for 60m minutes
-    { duration: "15s", target: 0 }, // ramp-down to 0 users over 20 minutes
+    { duration: "20m", target: `${__ENV.VUS}` }, // simulate ramp-up of traffic from 1 to ${__ENV.VUS} users over 15 minutes.
+    { duration: "60m", target: `${__ENV.VUS}` }, // stay at ${__ENV.VUS} users for 60m minutes
+    { duration: "20m", target: 0 }, // ramp-down to 0 users over 20 minutes
   ],
   //vus: `${__ENV.VUS}`,
   //iterations: 1,
@@ -154,7 +154,7 @@ export default function (data) {
         check(res7, { "put survey-unit state-data": (r) => r.status === 200 });
 
         // sleep 50 sec with a random positive/negative delay of 1s
-        sleep(5 + Math.random() * 2 - 1);
+        sleep(50 + Math.random() * 4 - 2);
 
         fillingOutQuestions(surveyUnitId, maxIterations, currentIteration + 1);
       }
