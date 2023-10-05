@@ -26,13 +26,11 @@ function safeGet(url, parse = true) {
 }
 
 function getSampleDatas(url, nbSampleDatas) {
-  console.log(url);
-  console.log(nbSampleDatas);
-  return new Array(nbSampleDatas).fill(0).map(function (_, i) {
-    const plop = safeGet(url.replace("${ITER}", i), false);
-    console.log(plop);
-    return plop;
-  });
+  let arrayData = new Array(nbSampleDatas);
+  for (let i = 0; i < nbSampleDatas; i++) {
+    arrayData[i] = safeGet(url.replace("${ITER}", i), false);
+  }
+  return arrayData;
 }
 
 export function setup() {
