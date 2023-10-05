@@ -35,6 +35,7 @@ export function setup() {
   const nbSampleDatas = `${__ENV.NB_SAMPLE_DATAS}`;
   const baseSampleDataUrl = `${__ENV.BASE_SAMPLE_DATAS_URL}`;
   const idCampaign = `${__ENV.CAMPAIGN_ID}`;
+  const idQuestionnaire = `${__ENV.QUESTIONNAIRE_ID}`;
   const minSurveyUnitId = `${__ENV.MIN_SURVEY_UNIT_ID}`;
   const maxSurveyUnitId = `${__ENV.MAX_SURVEY_UNIT_ID}`;
   const apiUrl = `${__ENV.PROTOCOL}://${__ENV.HOSTNAME}/api/`;
@@ -56,6 +57,7 @@ export function setup() {
 
   return {
     idCampaign,
+    idQuestionnaire,
     minSurveyUnitId,
     maxSurveyUnitId,
     arrData,
@@ -68,8 +70,7 @@ export function setup() {
 export default function (data) {
   /****Init : get model, metadata and nomenclatures****/
   group("Init questionnaire", function () {
-    const { idCampaign } = data;
-    const { apiUrl } = data;
+    const { idCampaign, idQuestionnaire, apiUrl } = data;
 
     const res = http.get(`${apiUrl}/campaign/${idCampaign}/questionnaire`);
     check(res, {
@@ -82,7 +83,7 @@ export default function (data) {
     });
 
     const res3 = http.get(
-      `${apiUrl}/campaign/${idCampaign}/required-nomenclatures`
+      `${apiUrl}/questionnaire/${idQuestionnaire}/required-nomenclatures`
     );
     check(res3, {
       "status 200 get required-nomenclatures": (r) => r.status === 200,
