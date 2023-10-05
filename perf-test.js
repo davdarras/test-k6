@@ -38,7 +38,7 @@ export function setup() {
   const idQuestionnaire = `${__ENV.QUESTIONNAIRE_ID}`;
   const minSurveyUnitId = `${__ENV.MIN_SURVEY_UNIT_ID}`;
   const maxSurveyUnitId = `${__ENV.MAX_SURVEY_UNIT_ID}`;
-  const apiUrl = `${__ENV.PROTOCOL}://${__ENV.HOSTNAME}/api/`;
+  const apiUrl = `${__ENV.PROTOCOL}://${__ENV.HOSTNAME}/api`;
 
   const arrData = getSampleDatas(
     baseSampleDataUrl + "data/data-${ITER}.json",
