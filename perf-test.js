@@ -19,6 +19,7 @@ export const options = {
 function safeGet(url, parse = true) {
   const { status, body } = http.get(url);
   if (status != 200) {
+    console.log("erreur !!!!");
     throw new Error(`Setup failed : GET ${url} ${status}`);
   }
   return parse ? JSON.parse(body) : body;
@@ -26,7 +27,9 @@ function safeGet(url, parse = true) {
 
 function getSampleDatas(url, nbSampleDatas) {
   return new Array(nbSampleDatas).fill(0).map(function (_, i) {
-    return safeGet(url.replace("${ITER}", i), false);
+    plop = safeGet(url.replace("${ITER}", i), false);
+    console.log(plop);
+    return plop;
   });
 }
 
@@ -109,7 +112,7 @@ export default function (data) {
 
   /****Filling out questionnaire and paradata****/
   group("Filling out questionnaire", function () {
-    console.log("...........apiUrl: " + data.apiUrl);
+    /*console.log("...........apiUrl: " + data.apiUrl);
     console.log("........stateData: " + data.arrStateData);
     console.log("baseSampleDataUrl: " + data.baseSampleDataUrl);
     console.log(".......idCampaign: " + data.idCampaign);
@@ -117,6 +120,8 @@ export default function (data) {
     console.log("..minSurveyUnitId: " + data.minSurveyUnitId);
     console.log("..maxSurveyUnitId: " + data.maxSurveyUnitId);
     console.log("....maxIterations: " + data.maxIterations);
+    
+    */
     const { minSurveyUnitId, maxSurveyUnitId, maxIterations } = data;
     const randomSurveyUnitId = Math.floor(
       Math.random() * (maxSurveyUnitId - minSurveyUnitId + 1) + minSurveyUnitId
@@ -128,7 +133,7 @@ export default function (data) {
       maxIterations,
       currentIteration = 0
     ) {
-      console.log(currentIteration + " " + maxIterations);
+      //console.log(currentIteration + " " + maxIterations);
       if (currentIteration < maxIterations) {
         const iterationData = data.arrData[currentIteration];
         const iterationParadata = data.arrParadata[currentIteration];
@@ -145,11 +150,12 @@ export default function (data) {
 
         const res6 = http.post(`${apiUrl}/paradata`, iterationParadata, params);
         check(res6, { "post survey-unit paradata": (r) => r.status === 200 });
-
+        /*
         console.log(`${apiUrl}/survey-unit/${surveyUnitId}/state-data`);
         console.log(surveyUnitId);
         console.log(iterationStateData);
         console.log("end");
+        */
         const res7 = http.put(
           `${apiUrl}/survey-unit/${surveyUnitId}/state-data`,
           iterationStateData,
