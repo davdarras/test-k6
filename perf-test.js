@@ -4,7 +4,7 @@ import http from "k6/http";
 export const options = {
   stages: [
     { duration: "15s", target: `${__ENV.VUS}` }, // simulate ramp-up of traffic from 1 to ${__ENV.VUS} users over 15 minutes.
-    { duration: "60s", target: `${__ENV.VUS}` }, // stay at ${__ENV.VUS} users for 60m minutes
+    { duration: "15s", target: `${__ENV.VUS}` }, // stay at ${__ENV.VUS} users for 60m minutes
     { duration: "15s", target: 0 }, // ramp-down to 0 users over 20 minutes
   ],
   //vus: `${__ENV.VUS}`,
@@ -74,7 +74,7 @@ export default function (data) {
   group("Init questionnaire", function () {
     const { idCampaign, idQuestionnaire, apiUrl } = data;
 
-    const res = http.get(`${apiUrl}/campaign/${idCampaign}/questionnaire`);
+    const res = http.get(`${apiUrl}/campaign/${idCampaign}/questionnaires`);
     check(res, {
       "status 200 get questionnaire model": (r) => r.status === 200,
     });
@@ -139,7 +139,7 @@ export default function (data) {
         check(res7, { "status 200 post": (r) => r.status === 200 });
 
         // sleep 50 sec with a random positive/negative delay of 1s
-        sleep(50 + Math.random() * 2 - 1);
+        sleep(5 + Math.random() * 2 - 1);
 
         fillingOutQuestions(surveyUnitId, maxIterations, currentIteration + 1);
       }
