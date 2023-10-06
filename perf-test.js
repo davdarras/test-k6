@@ -39,8 +39,8 @@ export function setup() {
   const baseSampleDataUrl = `${__ENV.BASE_SAMPLE_DATAS_URL}`;
   const idCampaign = `${__ENV.CAMPAIGN_ID}`;
   const idQuestionnaire = `${__ENV.QUESTIONNAIRE_ID}`;
-  const minSurveyUnitId = `${__ENV.MIN_SURVEY_UNIT_ID}`;
-  const maxSurveyUnitId = `${__ENV.MAX_SURVEY_UNIT_ID}`;
+  const minSurveyUnitId = parseInt(`${__ENV.MIN_SURVEY_UNIT_ID}`);
+  const maxSurveyUnitId = parseInt(`${__ENV.MAX_SURVEY_UNIT_ID}`);
   const apiUrl = `${__ENV.PROTOCOL}://${__ENV.HOSTNAME}/api`;
   const maxIterations = 18;
 
@@ -140,12 +140,7 @@ export default function (data) {
 
         const res6 = http.post(`${apiUrl}/paradata`, iterationParadata, params);
         check(res6, { "post survey-unit paradata": (r) => r.status === 200 });
-        /*
-        console.log(`${apiUrl}/survey-unit/${surveyUnitId}/state-data`);
-        console.log(surveyUnitId);
-        console.log(iterationStateData);
-        console.log("end");
-        */
+
         const res7 = http.put(
           `${apiUrl}/survey-unit/${surveyUnitId}/state-data`,
           iterationStateData,
