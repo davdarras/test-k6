@@ -3,9 +3,9 @@ import http from "k6/http";
 
 export const options = {
   stages: [
-    { duration: "10m", target: `${__ENV.VUS}` }, // simulate ramp-up of traffic from 1 to ${__ENV.VUS} users over 15 minutes.
+    { duration: "15m", target: `${__ENV.VUS}` }, // simulate ramp-up of traffic from 1 to ${__ENV.VUS} users over 15 minutes.
     { duration: "60m", target: `${__ENV.VUS}` }, // stay at ${__ENV.VUS} users for 60m minutes
-    { duration: "20m", target: 0 }, // ramp-down to 0 users over 20 minutes
+    { duration: "15m", target: 0 }, // ramp-down to 0 users over 20 minutes
   ],
   //vus: `${__ENV.VUS}`,
   //iterations: 1,
