@@ -139,7 +139,10 @@ export default function (data) {
         check(res5, { "get survey-unit data": (r) => r.status === 200 });
 
         const res6 = http.post(`${apiUrl}/paradata`, iterationParadata, params);
-        check(res6, { "post survey-unit paradata": (r) => r.status === 200 });
+        check(res6, {
+          "post survey-unit paradata": (r) =>
+            r.status === 200 || r.status === 201,
+        });
 
         const res7 = http.put(
           `${apiUrl}/survey-unit/${surveyUnitId}/state-data`,
