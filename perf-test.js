@@ -152,8 +152,8 @@ export default function (data) {
         check(res7, { "put survey-unit state-data": (r) => r.status === 200 });
 
         // sleep 50 sec with a random positive/negative delay of 1s
-        sleep(50 + Math.random() * 4 - 2);
-
+        // sleep(50 + Math.random() * 4 - 2);
+        sleep(3 + Math.random() * 7);
         fillingOutQuestions(surveyUnitId, maxIterations, currentIteration + 1);
       }
     }
